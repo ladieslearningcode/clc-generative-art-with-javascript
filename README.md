@@ -8,7 +8,7 @@
 
 Instructor Notes: [In progress]
 
-Preview Slides: (https://ladieslearningcode.github.io/clc-generative-art-with-javascript/)[https://ladieslearningcode.github.io/clc-generative-art-with-javascript/]
+Preview Slides: <a href="https://ladieslearningcode.github.io/clc-generative-art-with-javascript/slides-en.html">https://ladieslearningcode.github.io/clc-generative-art-with-javascript/slides-en.html</a>
 
 # ATTRIBUTIONS:
 
