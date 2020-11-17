@@ -6,9 +6,9 @@
 
 ## Quick Links
 
-Instructor Notes: [In progress]
+<a href="https://ladieslearningcode.github.io/clc-generative-art-with-javascript/slides-en.html">Preview EN Slides</a>
 
-Preview Slides: <a href="https://ladieslearningcode.github.io/clc-generative-art-with-javascript/slides-en.html">https://ladieslearningcode.github.io/clc-generative-art-with-javascript/slides-en.html</a>
+<a href="https://docs.google.com/document/d/1AzEDFs45cTlYZfCOT-OBcH-bEkAIb4jC6PoVaznDJfE/edit?usp=sharing"> Preview EN Instructor Notes </a>
 
 # ATTRIBUTIONS:
 
