@@ -1,8 +1,6 @@
-# [TESTING]
-
 ## English: (Scroll down for French)
 
-# Canada Learning Code: Generative Art with JavaScript
+# Ladies Learning Code: Generative Art with JavaScript
 
 ## Quick Links
 
