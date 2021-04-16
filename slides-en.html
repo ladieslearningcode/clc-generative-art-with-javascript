@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Generative Art with Processing</title>
+  <title>Generative Art with JavaScript</title>
   <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
   <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
   <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
@@ -30,7 +30,7 @@
         <p>Open <a href="https://editor.p5js.org">editor.p5js.org</a></p>
         <p>Optional: Click <strong>Sign Up</strong> to create an account</p>
         <hr>
-        <h2>Get <br>Familiar</h2>
+        <h2>While <br>you <br>wait</h2>
         <p>Go to <a href="https://showcase.p5js.org">showcase.p5js.org</a></p>
         <p>Check out some examples made with JavaScript and p5js</p>
       </div>
@@ -71,38 +71,26 @@
       </script>
     </section>
 
-    <section class="slide title" data-markdown>
+    <section class="slide" data-markdown>
       <script type="text/template">
-        #Getting Started with Zoom
+        # Getting started with Zoom
+
+        ![Mute and unmute yourself with shift+command+A, or hold the space bar to temporarily unmute. Turn your webcam on and off using shift+command+V. You can access Zoom's chat feature by selecting Chat in the toolbar. Use this if you have a question or something to share with the group!](framework/img/workshop/zoom_1.svg)
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Zoom: Muting and Unmuting
-        ![To mute and unmute yourself in Zoom, click the microphone button at the bottom left of your screen. The redline means you're muted. The same goes for your webcam.](framework/img/workshop/zoom-mute.png)
-       </script>
+        # Getting started with Zoom
+        ![](framework/img/workshop/zoom_2.svg)
+      </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Zoom: How to Chat
-        ![You can access Zoom's Chat feature by clicking on the button in the bottom right side of your screen. Use this if you have a question or something to share with the group!](framework/img/workshop/zoom-chat.png)
-       </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Zoom: Raising Your Hand
-        ![To raise your virtual hand, start by clicking on the Participants button.](framework/img/workshop/zoom-participants.png)
-       </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Zoom: Raising Your Hand
-        ![At the bottom of the Participants window, you can find the Raise Hand button. Try it now! You can also answer yes or no using the buttons next to raise hand.](framework/img/workshop/zoom-hand.png)
-       </script>
+        # Getting started with Zoom
+        ![Raise and lower your virtual hand using Option+Y.](framework/img/workshop/zoom_3.svg)
+      </script>
     </section>
 
     <section class="slide" data-markdown>
@@ -351,7 +339,7 @@
       Syntax is the set of rules for a language. We follow the syntax rules of English whenever we write or talk...
 
       Try reading this: `hello? HOW ARE YOU TODAY!`
-      
+
       How about: `Hello! How are you today?`
 
       With computers, we have to follow the rules perfectly or they'll get confused and not know what we mean!
@@ -460,11 +448,11 @@
       ```
 
       Tell the computer we want it to create a canvas using the built-in function `createCanvas`
-      
+
       We set the size of our new canvas with a **width** and **height** inside the parentheses `(width, height)`
-      
+
       *Remember: ```setup``` only happens once at the very beginning*
-      
+
       * Try making your canvas **bigger** or **smaller** by changing the numbers
 
       </script>
@@ -481,7 +469,7 @@
       ```
 
       When we clicked the play (▶) button a grey square appeared. Boring!
-      
+
       * Let's draw a shape...
 
       ``` JavaScript
@@ -580,7 +568,7 @@
         function draw() {
           background(145, 42, 126);
           ellipse(100, 100, 100, 100);
-        }  
+        }
         ```
 
       </script>
@@ -599,7 +587,7 @@
           background(145, 42, 126);
           fill(26, 94, 37); // so beautiful!
           ellipse(100, 100, 100, 100);
-        }  
+        }
         ```
 
         * Can you use the **Reference** to find the code that will change the black line around our ellipse to another colour?
@@ -620,7 +608,7 @@
         // this erases the ellipses when we press a key
         if(keyIsPressed) {
         ```
-        
+
         ...or at the end of a line of code:
         ```JavaScript
         background(145, 42, 126); // purpley-pink colour
@@ -654,7 +642,7 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         #Make It Move
-        
+
         We can replace any number in our code with a **variable**
 
         p5js has a whole bunch of variables ready for us to use like ```mouseX``` and ```mouseY```
@@ -786,7 +774,7 @@
             stroke(1, 209, 229);
             ellipse(mouseX, mouseY, 100, 100);
           }
-          
+
           if(keyIsPressed) {
             background(145, 42, 126);
           }
@@ -871,7 +859,7 @@
             stroke(1, 209, 229); // All of these numbers could be random
             ellipse(mouseX, mouseY, random(101), 100); // We could replace mouseX and mouseY with random numbers
           }
-          
+
           if(keyIsPressed) {
             background(145, 42, 126); // More numbers that could be random!
           }
@@ -915,7 +903,7 @@
 
         ```JavaScript
         myVariable = myVariable * 2;
-        ```        
+        ```
       </script>
     </section>
 
@@ -945,16 +933,16 @@
       <script type="text/template">
         #Stretch Goal: Make it Grow!
 
-        1. Create a new variable - it's going to make your ellipses get bigger so give it a meaningful name like `size` or `grow`. 
+        1. Create a new variable - it's going to make your ellipses get bigger so give it a meaningful name like `size` or `grow`.
 
           Remember to put it before ```function setup() {``` and it should look something like ```let myVariable = ...```
-        
+
         1. Put a small number in your variable
-        
+
         1. Replace the width or height (or both!) of your ellipses with the variable
-        
+
         1. Change the number in your variable using math, but make sure Processing does it over and over and over...
-        
+
         1. Put the small number back in your variable when a key gets pressed
 
         Tip: You can **comment out** the conditional statement for `mouseIsPressed` to more easily see if your ellipse is growing the way you want it to
@@ -987,7 +975,7 @@
             ellipse(mouseX, mouseY, grow, 100); // Use the variable to set the width
             grow = grow + 10; // Add 10 to the number in the variable
           }
-          
+
           if(keyIsPressed) {
             background(145, 42, 126);
             grow = 10; // Put the number 10 in the variable
@@ -1025,12 +1013,25 @@
           # Next Steps
 
           Check out the P5.js examples: <a href="https://p5js.org/examples/">p5js.org/examples</a>
-          
+
           Try more P5.js lessons: <a href="https://p5js.org/learn/">p5js.org/learn</a>
-          
+
           Watch Daniel Shiffman's *Coding Train* series: <a href="https://www.youtube.com/user/shiffman">youtube.com/user/shiffman</a>
-          
+
           See what the community is making with Processing: <a href="https://www.openprocessing.org/">openprocessing.org</a>
+
+        </script>
+      </section>
+
+      <section class="slide centered" data-markdown>
+        <script type="text/template">
+          # YOUR FEEDBACK HELPS US IMPROVE!
+
+          Learners, provide feedback here:<br>
+          [https://bit.ly/CLCLLCSurvey](https://bit.ly/CLCLLCSurvey)
+
+          Mentors, provide feedback here:<br>
+          [https://bit.ly/CLCMentorSurvey](https://bit.ly/CLCMentorSurvey)
 
         </script>
       </section>
